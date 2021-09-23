@@ -66,6 +66,9 @@ function checkAnswer() {
         alert("Correct Answer!");
         incrementScore();
     } else {
+        if (userAnswer = 'NaN') {
+            userAnswer = "without a number";
+        }
         alert(`You answered ${userAnswer}. The correct answer was ${calculatedAnswer[0]}! Better luck next time!`);
         incrementWrongAnswer();
     }
